@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digbyswift.AspNet", "Digbyswift.AspNet\Digbyswift.AspNet.csproj", "{6F28146F-F9E2-49CB-B2B3-31B793E08636}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{17026539-40ED-440F-BE2A-B2BB4D70639D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		StyleCopAnalyzers.Custom.ruleset = StyleCopAnalyzers.Custom.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digbyswift.AspNet.Tests", "Digbyswift.AspNet.Tests\Digbyswift.AspNet.Tests.csproj", "{1066E670-34A6-4929-B2FE-577DD3DB3487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F28146F-F9E2-49CB-B2B3-31B793E08636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F28146F-F9E2-49CB-B2B3-31B793E08636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F28146F-F9E2-49CB-B2B3-31B793E08636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F28146F-F9E2-49CB-B2B3-31B793E08636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1066E670-34A6-4929-B2FE-577DD3DB3487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1066E670-34A6-4929-B2FE-577DD3DB3487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1066E670-34A6-4929-B2FE-577DD3DB3487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1066E670-34A6-4929-B2FE-577DD3DB3487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
