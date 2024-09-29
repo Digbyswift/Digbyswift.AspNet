@@ -1,6 +1,6 @@
 namespace Digbyswift.AspNet.Settings;
 
-public sealed class SmtpOptions
+public class SmtpOptions
 {
     internal const string SectionName = "Site:Email:Smtp";
 

@@ -6,12 +6,10 @@ namespace Digbyswift.AspNet.Settings;
 public class EnvironmentSettings
 {
     public string Value { get; }
-    public string? SiteBaseUrl { get; }
 
     public EnvironmentSettings(IConfiguration config)
     {
         Value = config.GetValue<string>("Site:Environment", "Local")!;
-        SiteBaseUrl = config.GetValue<string>("Site:BaseUrl");
     }
 
     public bool IsLocal() => Value == AppEnvironment.Local;
