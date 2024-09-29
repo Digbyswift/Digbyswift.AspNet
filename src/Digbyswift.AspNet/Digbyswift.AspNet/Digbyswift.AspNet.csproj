@@ -3,6 +3,7 @@
 <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>Digbyswift.AspNet</RootNamespace>
     <Title>Digbyswift.AspNet</Title>
     <PackageProjectUrl>https://www.nuget.org/packages/Digbyswift.AspNet</PackageProjectUrl>
@@ -29,8 +30,5 @@
 </ItemGroup>
 <ItemGroup>
     <None Include="..\..\..\README.md" Pack="true" PackagePath="" />
-</ItemGroup>
-<ItemGroup>
-    <Compile Remove="Controllers\DefaultController.cs" />
 </ItemGroup>
 </Project>
