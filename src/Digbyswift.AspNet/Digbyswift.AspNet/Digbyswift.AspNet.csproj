@@ -18,8 +18,8 @@
 </PropertyGroup>
 <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Digbyswift.Core" Version="2.2.0" />
-    <PackageReference Include="Digbyswift.Http" Version="1.3.0" />
+    <PackageReference Include="Digbyswift.Core" Version="2.3.0" />
+    <PackageReference Include="Digbyswift.Http" Version="1.5.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
 </ItemGroup>
 <ItemGroup>

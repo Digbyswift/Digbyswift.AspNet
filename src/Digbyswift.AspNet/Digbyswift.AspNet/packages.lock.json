@@ -4,18 +4,18 @@
     "net7.0": {
       "Digbyswift.Core": {
         "type": "Direct",
-        "requested": "[2.2.0, )",
-        "resolved": "2.2.0",
-        "contentHash": "5GbdP9LT67ARfwVvbJAOGuzAtZD6Ts1hxBFbbi48tpzG8nVg8/6F38UiouoY51zSj/twdIvKuoYDYTcmabEjBA==",
+        "requested": "[2.3.0, )",
+        "resolved": "2.3.0",
+        "contentHash": "+7+7mxR7H0xwyif251cwwLE/4zpyZ1L1wOErlGGAOuGCpFBSJEhbEPgf31zX2K7IfVn/+wToDi2FiIhu0BX4zQ==",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         }
       },
       "Digbyswift.Http": {
         "type": "Direct",
-        "requested": "[1.3.0, )",
-        "resolved": "1.3.0",
-        "contentHash": "r/c2zvP833vTYFa6NuW17c3rR9syx+h5Loh91l2kDiSmVBQ2C3jgCWMU+flHYOwqEbByiygC8+U3ZdoxM+JIMQ==",
+        "requested": "[1.5.0, )",
+        "resolved": "1.5.0",
+        "contentHash": "f7pKQ8bKqHvrdOgxirYt9yASOEsG05Dtqu1tUf0cj7MpdFD3dE68C0bHW4qXme2b6mpOud67I1kGYYKTTshXmw==",
         "dependencies": {
           "Digbyswift.Core": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
