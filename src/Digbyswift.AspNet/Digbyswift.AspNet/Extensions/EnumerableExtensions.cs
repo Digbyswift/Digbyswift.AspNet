@@ -60,7 +60,7 @@ public static class EnumerableExtensions
 
     private static IEnumerable<SelectListItem> GetDefaultSelectListItem(string? defaultText = null)
     {
-        yield return new SelectListItem { Text = defaultText, Value = defaultText };
+        yield return new SelectListItem { Text = defaultText, Value = String.Empty };
     }
 
     #endregion
