@@ -11,9 +11,9 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>c# aspnet</PackageTags>
-    <PackageVersion>7.2.1</PackageVersion>
-    <AssemblyVersion>7.2.1</AssemblyVersion>
-    <FileVersion>7.2.1</FileVersion>
+    <PackageVersion>7.2.2-preview0</PackageVersion>
+    <AssemblyVersion>7.2.2</AssemblyVersion>
+    <FileVersion>7.2.2</FileVersion>
     <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
