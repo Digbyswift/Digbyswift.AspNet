@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -11,16 +11,16 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>c# aspnet</PackageTags>
-    <PackageVersion>7.2.1</PackageVersion>
-    <AssemblyVersion>7.2.1</AssemblyVersion>
-    <FileVersion>7.2.1</FileVersion>
-    <TargetFramework>net7.0</TargetFramework>
+    <PackageVersion>7.2.2-preview0</PackageVersion>
+    <AssemblyVersion>7.2.2</AssemblyVersion>
+    <FileVersion>7.2.2</FileVersion>
+    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Digbyswift.Core" Version="2.3.0" />
+    <PackageReference Include="Digbyswift.Core" Version="2.5.3" />
     <PackageReference Include="Digbyswift.Http" Version="1.5.0" />
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
 </ItemGroup>
 <ItemGroup>
     <None Include="..\..\..\package-icon.png" Pack="true" PackagePath="" />
