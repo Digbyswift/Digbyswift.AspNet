@@ -129,10 +129,10 @@
         <Rule Id="SA1406"  Action="Error" />          <!-- Debug.Fail should provide message text -->
         <Rule Id="SA1407"  Action="Error" />          <!-- Arithmetic expressions should declare precedence -->
         <Rule Id="SA1408"  Action="Error" />          <!-- Conditional expressions should declare precedence -->
-        <Rule Id="SA1409"  Action="Error" />          <!-- Remove unnecessary code -->
+        <Rule Id="SA1409"  Action="None"    />        <!-- Remove unnecessary code -->
         <Rule Id="SA1410"  Action="Error" />          <!-- Remove delegate parenthesis when possible -->
         <Rule Id="SA1411"  Action="Error" />          <!-- Attribute constructor should not use unnecessary parenthesis -->
-        <Rule Id="SA1412"  Action="None" />        <!-- Store files as UTF-8 with byte order mark -->
+        <Rule Id="SA1412"  Action="None"    />        <!-- Store files as UTF-8 with byte order mark -->
         <Rule Id="SA1413"  Action="None" />           <!-- Use trailing comma in multi-line initializers -->
     </Rules>
 
@@ -155,16 +155,16 @@
         <Rule Id="SA1515"  Action="Error" />          <!-- Single-line comment should be preceded by blank line -->
         <Rule Id="SA1516"  Action="None" />           <!-- Elements should be separated by blank line -->
         <Rule Id="SA1517"  Action="Error" />          <!-- Code should not contain blank lines at start of file -->
-        <Rule Id="SA1518"  Action="Error" />          <!-- Use line endings correctly at end of file -->
+        <Rule Id="SA1518"  Action="None" />           <!-- Use line endings correctly at end of file -->
         <Rule Id="SA1519"  Action="Error" />          <!-- Braces should not be omitted from multi-line child statement -->
         <Rule Id="SA1520"  Action="Error" />          <!-- Use braces consistently -->
     </Rules>
 
     <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.DocumentationRules">
         <Rule Id="SA1600"  Action="None" />           <!-- Elements should be documented -->
-        <Rule Id="SA1601"  Action="Error" />          <!-- Partial elements should be documented -->
+        <Rule Id="SA1601"  Action="None" />           <!-- Partial elements should be documented -->
         <Rule Id="SA1602"  Action="Error" />          <!-- Enumeration items should be documented -->
-        <Rule Id="SA1603"  Action="Error" />          <!-- Documentation should contain valid XML -->
+        <Rule Id="SA1603"  Action="None" />           <!-- Documentation should contain valid XML -->
         <Rule Id="SA1604"  Action="Error" />          <!-- Element documentation should have summary -->
         <Rule Id="SA1605"  Action="Error" />          <!-- Partial element documentation should have summary -->
         <Rule Id="SA1606"  Action="Error" />          <!-- Element documentation should have summary text -->
@@ -188,7 +188,7 @@
         <Rule Id="SA1624"  Action="Error" />          <!-- Property summary documentation should omit accessor with restricted access -->
         <Rule Id="SA1625"  Action="Error" />          <!-- Element documentation should not be copied and pasted -->
         <Rule Id="SA1626"  Action="Error" />          <!-- Single-line comments should not use documentation style slashes -->
-        <Rule Id="SA1627"  Action="None" />          <!-- Documentation text should not be empty -->
+        <Rule Id="SA1627"  Action="Error" />           <!-- Documentation text should not be empty -->
         <Rule Id="SA1628"  Action="None" />           <!-- Documentation text should begin with a capital letter -->
         <Rule Id="SA1629"  Action="Error" />          <!-- Documentation text should end with a period -->
         <Rule Id="SA1630"  Action="None" />           <!-- Documentation text should contain whitespace -->
@@ -211,7 +211,7 @@
         <Rule Id="SA1647"  Action="None" />           <!-- Include node does not contain valid file and path -->
         <Rule Id="SA1648"  Action="Error" />          <!-- Inheritdoc should be used with inheriting class -->
         <Rule Id="SA1649"  Action="Error" />          <!-- File name should match first type name -->
-        <Rule Id="SA1650"  Action="Error" />          <!-- Element documentation should be spelled correctly -->
+        <Rule Id="SA1650"  Action="None" />           <!-- Element documentation should be spelled correctly -->
         <Rule Id="SA1651"  Action="Error" />          <!-- Do not use placeholder elements -->
     </Rules>
 </RuleSet>

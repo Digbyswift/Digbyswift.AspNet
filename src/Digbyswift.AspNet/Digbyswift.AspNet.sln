@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		.editorconfig = .editorconfig
 		Directory.Build.props = Directory.Build.props
 		StyleCopAnalyzers.Custom.ruleset = StyleCopAnalyzers.Custom.ruleset
+		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digbyswift.AspNet.Tests", "Digbyswift.AspNet.Tests\Digbyswift.AspNet.Tests.csproj", "{1066E670-34A6-4929-B2FE-577DD3DB3487}"
