@@ -1,4 +1,4 @@
-﻿using Digbyswift.Http.Extensions;
+﻿using Digbyswift.Core.Http.Extensions;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.AspNetCore.Routing;

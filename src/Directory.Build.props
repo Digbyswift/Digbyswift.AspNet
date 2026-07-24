@@ -2,6 +2,7 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <LangVersion>default</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <SolutionDir Condition="'$(SolutionDir)' == ''">$(MSBuildThisFileDirectory)</SolutionDir>
     <CodeAnalysisRuleSet>$(SolutionDir)\StyleCopAnalyzers.Custom.ruleset</CodeAnalysisRuleSet>
