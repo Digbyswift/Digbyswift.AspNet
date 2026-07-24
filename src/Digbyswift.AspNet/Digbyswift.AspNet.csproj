@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Project settings -->
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Digbyswift.AspNet</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <!-- Nuget settings -->
+    <Title>$(RootNamespace)</Title>
+    <Authors>Digbyswift Ltd</Authors>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <Copyright>Copyright © $(Authors) 2026</Copyright>
+    <PackageId>$(RootNamespace)</PackageId>
+    <PackageProjectUrl>https://github.com/digbyswift/$(RootNamespace)</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>package-icon.png</PackageIcon>
+    <PackageTags>c# aspnet extensions utility</PackageTags>
+    <PackageVersion>8.0.0-beta</PackageVersion>
+    <AssemblyVersion>8.0.0</AssemblyVersion>
+    <FileVersion>8.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/digbyswift/$(RootNamespace)</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Digbyswift.Core" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\package-icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

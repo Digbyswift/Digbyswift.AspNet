@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using Digbyswift.Http.Extensions;
+using Digbyswift.Core.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
