@@ -1,0 +1,75 @@
+name: .NET Tests
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test-lib:
+    strategy:
+        matrix:
+            os: ['windows-latest', 'ubuntu-22.04']
+
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        working-directory: src/Digbyswift.AspNet.Tests
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore --force-evaluate
+
+      - name: Build
+        run: dotnet build --no-restore
+
+      - name: Test
+        run: dotnet test --no-build --verbosity normal --logger trx
+
+      - name: Upload Test Result Files
+        if: (!cancelled())
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test Results (OS ${{ matrix.os }})
+          path: ${{ github.workspace }}/**/*.trx
+          retention-days: 5
+
+  publish-test-results:
+    name: "Publish Tests Results"
+    needs: test-lib
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
+    if: (!cancelled())
+
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        with:
+          files: "artifacts/**/*.trx"
+
+      # Pinned commit for https://github.com/EnricoMi/publish-unit-test-result-action/releases/tag/v2.20.0
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@afb2984f4d89672b2f9d9c13ae23d53779671984
+        if: always()
+        with:
+          files: |
+            **/*.trx
