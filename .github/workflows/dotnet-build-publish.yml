@@ -43,6 +43,9 @@ jobs:
 
     needs: build-lib
 
+    permissions:
+      id-token: write
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
