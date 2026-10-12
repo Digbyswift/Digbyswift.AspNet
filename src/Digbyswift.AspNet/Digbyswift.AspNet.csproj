@@ -24,7 +24,6 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
-
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Digbyswift.Core" />
@@ -32,11 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\package-icon.png" Pack="true" PackagePath="" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
