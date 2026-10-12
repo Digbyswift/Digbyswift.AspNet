@@ -23,7 +23,7 @@ The goal is to keep package structure, CI, versioning, tests, documentation, and
 
 ## Technology baseline
 
-- .NET 10
+- .NET 8
 - Language version default
 - Nullable enabled
 - Implicit usings enabled
