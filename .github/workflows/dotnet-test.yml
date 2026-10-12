@@ -1,4 +1,4 @@
-name: .NET Tests
+name: Run package tests
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   test-lib:
+    name: Run unit tests
     strategy:
         matrix:
             os: ['windows-latest', 'ubuntu-22.04']
@@ -38,16 +39,16 @@ jobs:
       - name: Test
         run: dotnet test --no-build --verbosity normal --logger trx
 
-      - name: Upload Test Result Files
+      - name: Upload test result files
         if: (!cancelled())
         uses: actions/upload-artifact@v4
         with:
-          name: Test Results (OS ${{ matrix.os }})
+          name: Test results (OS ${{ matrix.os }})
           path: ${{ github.workspace }}/**/*.trx
           retention-days: 5
 
   publish-test-results:
-    name: "Publish Tests Results"
+    name: Publish tests results
     needs: test-lib
     runs-on: ubuntu-latest
     permissions:
@@ -56,18 +57,18 @@ jobs:
     if: (!cancelled())
 
     steps:
-      - name: Download Artifacts
+      - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
           path: artifacts
 
-      - name: Publish Test Results
+      - name: Publish test results
         uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           files: "artifacts/**/*.trx"
 
       # Pinned commit for https://github.com/EnricoMi/publish-unit-test-result-action/releases/tag/v2.20.0
-      - name: Publish Test Results
+      - name: Publish test results
         uses: EnricoMi/publish-unit-test-result-action@afb2984f4d89672b2f9d9c13ae23d53779671984
         if: always()
         with:
