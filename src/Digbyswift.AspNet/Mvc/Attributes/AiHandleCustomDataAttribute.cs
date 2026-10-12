@@ -1,4 +1,4 @@
-﻿using Digbyswift.Http.Extensions;
+﻿using Digbyswift.Core.Http.Extensions;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.AspNetCore.Mvc.Filters;

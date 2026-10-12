@@ -13,7 +13,7 @@ public sealed class RecaptchaSettings
     [ConfigurationKeyName("v3")]
     public RecaptchaVersionSettings? V3 { get; set; }
 
-    public IEnumerable<string> BotWhitelist { get; set; } = Enumerable.Empty<string>();
+    public IEnumerable<string> BotWhitelist { get; set; } = [];
 }
 
 public sealed class RecaptchaVersionSettings

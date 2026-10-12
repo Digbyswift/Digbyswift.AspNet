@@ -1,4 +1,4 @@
-﻿using Digbyswift.Http.Extensions;
+﻿using Digbyswift.Core.Http.Extensions;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Digbyswift.AspNet.Mvc.Attributes;

@@ -7,8 +7,8 @@ namespace Digbyswift.AspNet.Mvc.Attributes;
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
 public sealed class AiHandleErrorAttribute : ExceptionFilterAttribute
 {
-    public override void OnException(ExceptionContext filterContext)
+    public override void OnException(ExceptionContext context)
     {
-        filterContext.HttpContext.RequestServices.GetService<TelemetryClient>()?.TrackException(filterContext.Exception);
+        context.HttpContext.RequestServices.GetService<TelemetryClient>()?.TrackException(context.Exception);
     }
 }

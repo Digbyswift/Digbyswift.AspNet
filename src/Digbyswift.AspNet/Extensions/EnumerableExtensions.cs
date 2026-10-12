@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Digbyswift.Core.Extensions;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Digbyswift.AspNet.Extensions;
 
@@ -41,7 +42,7 @@ public static class EnumerableExtensions
 
     public static IEnumerable<SelectListItem> ToSelectList<T>(this IEnumerable<T> enumerable, Func<T, string> text, Func<T, int> value, Func<T, bool> selected)
     {
-        return enumerable.Select(item => new SelectListItem { Text = text(item), Value = value(item).ToString(), Selected = selected(item) });
+        return enumerable.Select(item => new SelectListItem { Text = text(item), Value = value(item).ToInvariantString(), Selected = selected(item) });
     }
 
     public static IEnumerable<SelectListItem> ToSelectList<T>(this IEnumerable<T> enumerable, Func<T, string> text, Func<T, string> value, string defaultText)
@@ -54,7 +55,7 @@ public static class EnumerableExtensions
     public static IEnumerable<SelectListItem> ToSelectList<T>(this IEnumerable<T> enumerable, Func<T, string> text, Func<T, int> value, string defaultText)
     {
         return GetDefaultSelectListItem(defaultText)
-            .Concat(enumerable.Select(item => new SelectListItem { Text = text(item), Value = value(item).ToString() }))
+            .Concat(enumerable.Select(item => new SelectListItem { Text = text(item), Value = value(item).ToInvariantString() }))
             .ToList();
     }
 
